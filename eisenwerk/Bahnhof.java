@@ -1,8 +1,5 @@
 package eisenwerk;
 
-import eisenwerk.Queue;
-import eisenwerk.QueueInt;
-import eisenwerk.Gleis;
 import java.util.Arrays;
 import java.util.Scanner;
 
