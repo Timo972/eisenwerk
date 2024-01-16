@@ -17,13 +17,13 @@ public class Bahnhof {
         this.gleis3 = gleis3;
     }
 
-    public QueueInt sortieren(int[] reihenfolge) {
+    public Queue sortieren(int[] reihenfolge) {
 
-        QueueInt x = new QueueInt(reihenfolge.length);
+        Queue x = new QueueInt(reihenfolge.length);
 
         Arrays.sort(reihenfolge);
 
-        for (int i = reihenfolge.length - 1; i >= 0; i--) {
+        for (int i = 0; i < reihenfolge.length; i++) {
             x.enqueue(reihenfolge[i]);
         }
 
@@ -87,7 +87,7 @@ public class Bahnhof {
     }
 
     Queue sortierenAnders(int[] reihenfolge) {
-        Queue sortiert = new QueueInt();
+        Queue sortiert = new QueueInt(reihenfolge.length);
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte geben Sie die Waggonnummern in der gewünschten Reihenfolge ein!");
         for (int i = 0; i < reihenfolge.length; i++) {
